@@ -7,17 +7,19 @@
 /*header Section*/
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #F9704b;
-    width: 100%;
+    background-color: #C31508;
     padding: 30px;
+    
 }
 
 header h1 {
     font-size: 36px;
     color:  #Eeeeee ;
+    margin: 0;
 }
 
 header h1:hover {
@@ -25,7 +27,7 @@ header h1:hover {
 }
 
 header nav {
- padding: 15px;
+    padding: 15px;
 }
 
 header nav ul {
@@ -39,15 +41,59 @@ header nav ul {
 header nav ul li a {
     padding: 10px;
     margin: 5px;
-    font-size: 24px;
+    font-size: 4vw;
     color:  #Eeeeee;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #F1eca4;
     color: white;
     
 }
 
 /*end of header section*/
+
+/*Billboard section*/
+
+.billboard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.billboard .intro{
+    padding: 30px;
+    border-bottom: 2px solid blue;
+    
+}
+
+.small-font {
+    font-size: 20px;
+}
+
+.big-font {
+    font-size: 30px;
+}
+
+.my-name {
+    color: #C31508;
+}
+
+.my-name:hover {
+    color: #7A220F;
+    
+}
+
+.medium-font {
+    font-size: 22px;
+}
+
+.picture img{
+    width: 60vw;
+    margin: 3.5%;
+}
+
+/*end of buildboard section*/
+
