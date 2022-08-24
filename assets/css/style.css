@@ -171,3 +171,17 @@ header nav ul li a:hover {
     font-size: 20px;
     margin: 0 20px 0 20px;
 }
+
+/*end of contact me section*/
+
+/*start of footer section*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #C31508;
+    color: #Eeeeee;
+    padding: 15px;
+}
+
+/*end of footer section*/
