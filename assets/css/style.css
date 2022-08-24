@@ -17,7 +17,6 @@ header {
     background-attachment: fixed;
     background-position: 54%;
     opacity: .9;
-     
 }
 
 header h1 {
@@ -116,6 +115,7 @@ header nav ul li a:hover {
     background-color: #C31508;
     color: #Eeeeee;
     padding: 15px;
+    margin-top: 30px;
 }
 
 .wrapper {
@@ -125,8 +125,7 @@ header nav ul li a:hover {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 .image {
@@ -137,7 +136,38 @@ header nav ul li a:hover {
 }
 
 .project-title {
+    width: 80%;
     font-size: 24px;
-    padding: 20px 0 10px;
+    padding: 30px 0 5px;
+    margin: 0 auto 20px auto;
     text-align: center;
+    border-bottom: 2px solid #EEA116;
+}
+
+/*end of portfolio section*/
+
+/*start of contact me section*/
+
+.contact-header {
+    width: 100%;
+    text-align: center;
+    background-color: #C31508;
+    color: #Eeeeee;
+    padding: 15px;
+    margin-top:30px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.buttons .push-me {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 0 20px 0 20px;
 }
