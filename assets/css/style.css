@@ -9,16 +9,20 @@
 header {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    background-color: #C31508;
     padding: 30px;
-    
+    background-image: url("/assets/images/backgorund.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 54%;
+    opacity: .9;
+     
 }
 
 header h1 {
     font-size: 36px;
-    color:  #Eeeeee ;
+    color:  #EEA116 ;
     margin: 0;
 }
 
@@ -33,8 +37,6 @@ header nav {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
@@ -42,7 +44,7 @@ header nav ul li a {
     padding: 10px;
     margin: 5px;
     font-size: 4vw;
-    color:  #Eeeeee;
+    color:  #EEA116;
     text-decoration: none;
 }
 
@@ -61,12 +63,20 @@ header nav ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    background-image: url("/assets/images/backgorund.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 54%;
 }
 
 .billboard .intro{
-    padding: 30px;
-    border-bottom: 2px solid blue;
+    padding: 30px 15px 5px;
+    border-bottom: 2px solid #EEA116;
     
+}
+
+.billboard p {
+    color: white;
 }
 
 .small-font {
@@ -78,11 +88,11 @@ header nav ul li a:hover {
 }
 
 .my-name {
-    color: #C31508;
+    color: #EEA116;
 }
 
 .my-name:hover {
-    color: #7A220F;
+    color: #F1eca4;
     
 }
 
@@ -92,8 +102,42 @@ header nav ul li a:hover {
 
 .picture img{
     width: 60vw;
-    margin: 3.5%;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 /*end of buildboard section*/
 
+/*start of the portfolio section*/
+
+.portfolio-header {
+    width: 100%;
+    text-align: center;
+    background-color: #C31508;
+    color: #Eeeeee;
+    padding: 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.image {
+    border: 2px solid #F1eca4;
+    max-width: 85vw;
+    flex: 1;
+    border-radius: 15px;
+}
+
+.project-title {
+    font-size: 24px;
+    padding: 20px 0 10px;
+    text-align: center;
+}
