@@ -332,3 +332,41 @@ header nav ul li a:hover {
 }
 
 /*end of media queries for tablets*/
+
+
+/*start of media queris for small desktop screens*/
+
+@media screen and (min-width: 981px) {
+
+    header {
+        align-items: center;
+    }
+    
+    header h1 {
+        font-size: 40px;
+        flex: 1;
+        margin-right: 35%;
+    }
+    
+    header nav {
+        padding: 0px;
+    }
+    
+    header nav ul li a {
+        font-size: 2.5vw;
+    }
+
+    .picture img{
+        width: 25vw;
+    }
+
+    .image {
+        width: 30vw;
+    }
+
+    .first-project .image{
+        width: 70vw;
+    }
+}
+
+/*end of media queries for smaller desktop screens*/
