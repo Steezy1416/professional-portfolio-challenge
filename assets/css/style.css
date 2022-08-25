@@ -114,7 +114,7 @@ header nav ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("/assets/images/backgorund.jpg");
+    background-image: url("../images/backgorund.jpg");
 }
 
 .billboard .intro{
@@ -161,7 +161,7 @@ header nav ul li a:hover {
     width: 100%;
     text-align: center;
     padding: 15px;
-    background-image: url("/assets/images/backgorund.jpg");
+    background-image: url("../images/backgorund.jpg");
 }
 
 .description {
@@ -188,7 +188,7 @@ header nav ul li a:hover {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
-    background-image: url("/assets/images/blue-main.jpg");
+    background-image: url("../images/blue-main.jpg");
 }
 
 .wrapper {
@@ -199,7 +199,7 @@ header nav ul li a:hover {
     justify-content: center;
     justify-content: space-around;
     width: 100%; 
-    background-image: url("/assets/images/blue-main.jpg");
+    background-image: url("../images/blue-main.jpg");
 }
 
 .project-title {
@@ -238,7 +238,7 @@ header nav ul li a:hover {
 .contact-header {
     width: 100%;
     text-align: center;
-    background-image: url("/assets/images/blue-main.jpg");
+    background-image: url("../images/blue-main.jpg");
     padding: 15px; 
 }
 
@@ -248,7 +248,7 @@ header nav ul li a:hover {
     justify-content: center;
     align-content: space-around;
     padding: 50px;
-    background-image: url("/assets/images/blue-main.jpg");
+    background-image: url("../images/blue-main.jpg");
 }
 
 .push-me {
@@ -274,7 +274,7 @@ header nav ul li a:hover {
 .footer {
     width: 100%;
     text-align: center;
-    background-image: url("/assets/images/blue-main.jpg");
+    background-image: url("../images/blue-main.jpg");
     padding: 15px;
 }
 
@@ -303,7 +303,6 @@ header nav ul li a:hover {
         width: 100%;
         text-align: center;
         padding: 15px;
-        background-image: url("/assets/images/backgorund.jpg");
     }
 
     .description {
