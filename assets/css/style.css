@@ -199,6 +199,13 @@ header nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+.image:hover {
+    border-bottom: 6px solid #85E8FA;
+    border-left: 6px solid #FF6F4F;
+    border-right: 6px solid #0A697A;
+    border-top: 6px solid #56C451;
+}
+
 .project-title {
     width: 80%;
     font-size: 24px;
@@ -235,8 +242,13 @@ header nav ul li a:hover {
     border-radius: 20px;
     font-size: 20px;
     margin: 10px 20px 10px 20px;
-    background-color: #6398EA;
+    background-color: #506DF5;
     border: none;
+}
+
+.push-me:hover {
+    border: 2px solid var(--glow);
+    width: 120px;
 }
 
 /*end of contact me section*/
