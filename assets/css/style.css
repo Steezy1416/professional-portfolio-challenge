@@ -66,6 +66,8 @@ header h1 {
     font-size: 36px;
     color:  #F1E429;
     margin: 0;
+    text-align: center;
+    width: 100%;
 }
 
 header h1:hover {
@@ -80,6 +82,9 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 header nav ul li a {
@@ -109,11 +114,14 @@ header nav ul li a:hover {
 }
 
 .description {
-    padding: 20px
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5% 20%;
 }
 
 .description p {
-    padding: 10px;
+    padding-top: 15px;
     line-height: 1.5;
     font-size: 16px;
     text-align: center;
@@ -268,3 +276,59 @@ header nav ul li a:hover {
 }
 
 /*end of footer section*/
+
+
+/*start of media queries for tablets*/
+
+@media screen and (min-width: 768px) {
+
+    .billboard {
+        align-content: space-between;
+    }
+    
+    .billboard .intro{
+        padding: 0px;
+        margin-right: 55px;
+    }
+    
+    .picture img{
+        width: 40vw;
+        padding-top: 30px;
+    }
+
+    .about-title {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        background-image: url("/assets/images/backgorund.jpg");
+    }
+
+    .description {
+        margin: 2% 30%;
+    }
+    
+    .description p {
+        padding-top: 10px;
+    }
+    
+    .portfolio-header {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+    }
+    
+    .wrapper {
+        flex-direction: row;
+    }
+    
+    .image {
+        width: 45vw;
+    }
+    
+    .first-project .image{
+        width: 80vw;
+    }
+}
+
+/*end of media queries for tablets*/
