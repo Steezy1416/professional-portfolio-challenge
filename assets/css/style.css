@@ -12,6 +12,9 @@
     --glow: white;
 }
 
+/*end of variables for common colors*/
+
+
 /*common color attributes*/
 
 .about-title:hover, .portfolio-header:hover,
@@ -64,14 +67,14 @@ header {
 
 header h1 {
     font-size: 36px;
-    color:  #F1E429;
+    color: var(--light-white);
     margin: 0;
     text-align: center;
     width: 100%;
 }
 
 header h1:hover {
-    color: #FFEF00;
+    color: var(--glow);
 }
 
 header nav {
@@ -91,43 +94,17 @@ header nav ul li a {
     padding: 10px;
     margin: 5px;
     font-size: 4vw;
-    color:  #F1E429;
+    color:  var(--light-white);
     text-decoration: none;
 }
 
 header nav ul li a:hover {
-    border-bottom: 2px solid #FFEF00;
+    border-bottom: 2px solid #065249;
     color: var(--glow);
     
 }
 
 /*end of header section*/
-
-
-/*start of about me section*/
-
-.about-title {
-    width: 100%;
-    text-align: center;
-    padding: 15px;
-    background-image: url("/assets/images/backgorund.jpg");
-}
-
-.description {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 5% 20%;
-}
-
-.description p {
-    padding-top: 15px;
-    line-height: 1.5;
-    font-size: 16px;
-    text-align: center;
-}
-
-/*end of about me section*/
 
 
 /*Billboard section*/
@@ -162,20 +139,46 @@ header nav ul li a:hover {
 }
 
 .my-name:hover {
-    color: #FFEF00;
+    color: #F6F874;
 }
 
 .medium-font {
     font-size: 22px;
 }
 
-.picture img{
+.my-picture img{
     width: 60vw;
     margin: 0 auto 30px auto;
     padding-top: 20px;
 }
 
 /*end of buildboard section*/
+
+
+/*start of about me section*/
+
+.about-title {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-image: url("/assets/images/backgorund.jpg");
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5% 20%;
+}
+
+.description p {
+    padding-top: 15px;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*end of about me section*/
 
 
 /*start of the portfolio section*/
@@ -199,6 +202,19 @@ header nav ul li a:hover {
     background-image: url("/assets/images/blue-main.jpg");
 }
 
+.project-title {
+    width: 60%;
+    font-size: 24px;
+    padding: 30px 0 5px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    border-bottom: 2px solid #EEA116;
+}
+
+.first-project .image{
+    width: 90vw;
+}
+
 .image {
     border: 2px solid #F1eca4;
     width: 75vw;
@@ -212,19 +228,6 @@ header nav ul li a:hover {
     border-left: 6px solid #FF6F4F;
     border-right: 6px solid #0A697A;
     border-top: 6px solid #56C451;
-}
-
-.project-title {
-    width: 60%;
-    font-size: 24px;
-    padding: 30px 0 5px;
-    margin: 0 auto 20px auto;
-    text-align: center;
-    border-bottom: 2px solid #EEA116;
-}
-
-.first-project .image{
-    width: 90vw;
 }
 
 /*end of portfolio section*/
@@ -291,7 +294,7 @@ header nav ul li a:hover {
         margin-right: 55px;
     }
     
-    .picture img{
+    .my-picture img{
         width: 40vw;
         padding-top: 30px;
     }
@@ -356,7 +359,7 @@ header nav ul li a:hover {
         font-size: 2.5vw;
     }
 
-    .picture img{
+    .my-picture img{
         width: 25vw;
     }
 
@@ -376,10 +379,6 @@ header nav ul li a:hover {
 
 @media screen and (min-width: 1200px) {
 
-    header {
-        position: sticky;
-    }
-
     header h1 {
         font-size: 35px;
         flex: 1;
@@ -390,7 +389,7 @@ header nav ul li a:hover {
         font-size: 2vw;
     }
 
-    .picture img{
+    .my-picture img{
         width: 20vw;
     }
 
