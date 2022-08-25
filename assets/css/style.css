@@ -1,0 +1,270 @@
+/*universal selector affects all attributes with the declarations*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*varibles for common colors*/
+
+:root {
+    --light-white: #E7E0E0;
+    --glow: white;
+}
+
+/*common color attributes*/
+
+.about-title:hover, .portfolio-header:hover,
+.project-title:hover, .contact-header:hover,
+.push-me:hover,
+.footer:hover{
+    color: var(--glow);
+}
+
+.about-title, .portfolio-header,
+.contact-header, .project-title,
+.push-me,
+.footer {
+    color: var(--light-white);
+}
+
+/*end of common color attributes*/
+
+
+/*common background image attributes*/
+
+.about-title, .billboard,
+.portfolio-header, .wrapper,
+.contact-header, .buttons,
+.footer {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 60%;
+}
+
+.about-title, .portfolio-header,
+.contact-header,
+.footer {
+    opacity: .9;
+}
+
+/*end of common background attributes*/
+
+
+/*header Section*/
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: #C31508;
+}
+
+header h1 {
+    font-size: 36px;
+    color:  #F1E429;
+    margin: 0;
+}
+
+header h1:hover {
+    color: #FFEF00;
+}
+
+header nav {
+    padding: 15px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px;
+    margin: 5px;
+    font-size: 4vw;
+    color:  #F1E429;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #FFEF00;
+    color: var(--glow);
+    
+}
+
+/*end of header section*/
+
+
+/*start of about me section*/
+
+.about-title {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-image: url("/assets/images/backgorund.jpg");
+}
+
+.description {
+    padding: 20px
+}
+
+.description p {
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*end of about me section*/
+
+
+/*Billboard section*/
+
+.billboard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("/assets/images/backgorund.jpg");
+}
+
+.billboard .intro{
+    padding: 30px 15px 5px;
+    border-bottom: 2px solid #EEA116;
+}
+
+.billboard p {
+    color: white;
+}
+
+.small-font {
+    font-size: 20px;
+}
+
+.big-font {
+    font-size: 30px;
+}
+
+.my-name {
+    color: #EEA116;
+}
+
+.my-name:hover {
+    color: #FFEF00;
+}
+
+.medium-font {
+    font-size: 22px;
+}
+
+.picture img{
+    width: 60vw;
+    margin: 0 auto 30px auto;
+    padding-top: 20px;
+}
+
+/*end of buildboard section*/
+
+
+/*start of the portfolio section*/
+
+.portfolio-header {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-image: url("/assets/images/blue-main.jpg");
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%; 
+    background-image: url("/assets/images/blue-main.jpg");
+}
+
+.image {
+    border: 2px solid #F1eca4;
+    width: 75vw;
+    flex: 1;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.image:hover {
+    border-bottom: 6px solid #85E8FA;
+    border-left: 6px solid #FF6F4F;
+    border-right: 6px solid #0A697A;
+    border-top: 6px solid #56C451;
+}
+
+.project-title {
+    width: 60%;
+    font-size: 24px;
+    padding: 30px 0 5px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    border-bottom: 2px solid #EEA116;
+}
+
+.first-project .image{
+    width: 90vw;
+}
+
+/*end of portfolio section*/
+
+
+/*start of contact me section*/
+
+.contact-header {
+    width: 100%;
+    text-align: center;
+    background-image: url("/assets/images/blue-main.jpg");
+    padding: 15px; 
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    padding: 50px;
+    background-image: url("/assets/images/blue-main.jpg");
+}
+
+.push-me {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 10px 20px 10px 20px;
+    background-color: #506DF5;
+    border: none;
+}
+
+.push-me:hover {
+    border: 2px solid var(--glow);
+    width: 120px;
+}
+
+/*end of contact me section*/
+
+
+/*start of footer section*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-image: url("/assets/images/blue-main.jpg");
+    padding: 15px;
+}
+
+/*end of footer section*/
