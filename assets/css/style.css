@@ -1,8 +1,55 @@
+/*universal selector affects all attributes with the declarations*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/*varibles for common colors*/
+
+:root {
+    --light-white: #E7E0E0;
+    --glow: white;
+}
+
+/*common color attributes*/
+
+.about-title:hover, .portfolio-header:hover,
+.project-title:hover, .contact-header:hover,
+.push-me:hover,
+.footer:hover{
+    color: var(--glow);
+}
+
+.about-title, .portfolio-header,
+.contact-header, .project-title,
+.push-me,
+.footer {
+    color: var(--light-white);
+}
+
+/*end of common color attributes*/
+
+
+/*common background image attributes*/
+
+.about-title, .billboard,
+.portfolio-header, .wrapper,
+.contact-header, .buttons,
+.footer {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 60%;
+}
+
+.about-title, .portfolio-header,
+.contact-header,
+.footer {
+    opacity: .9;
+}
+
+/*end of common background attributes*/
+
 
 /*header Section*/
 
@@ -17,12 +64,12 @@ header {
 
 header h1 {
     font-size: 36px;
-    color:  #EEA116 ;
+    color:  #F1E429;
     margin: 0;
 }
 
 header h1:hover {
-    color: white;
+    color: #FFEF00;
 }
 
 header nav {
@@ -39,31 +86,26 @@ header nav ul li a {
     padding: 10px;
     margin: 5px;
     font-size: 4vw;
-    color:  #EEA116;
+    color:  #F1E429;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
-    border-bottom: 2px solid #F1eca4;
-    color: white;
+    border-bottom: 2px solid #FFEF00;
+    color: var(--glow);
     
 }
 
 /*end of header section*/
+
 
 /*start of about me section*/
 
 .about-title {
     width: 100%;
     text-align: center;
-    background-color: #C31508;
-    color: #Eeeeee;
     padding: 15px;
     background-image: url("/assets/images/backgorund.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 60%;
-    opacity: .9;
 }
 
 .description {
@@ -79,6 +121,7 @@ header nav ul li a:hover {
 
 /*end of about me section*/
 
+
 /*Billboard section*/
 
 .billboard {
@@ -87,15 +130,11 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     background-image: url("/assets/images/backgorund.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 60%;
 }
 
 .billboard .intro{
     padding: 30px 15px 5px;
     border-bottom: 2px solid #EEA116;
-    
 }
 
 .billboard p {
@@ -115,8 +154,7 @@ header nav ul li a:hover {
 }
 
 .my-name:hover {
-    color: #F1eca4;
-    
+    color: #FFEF00;
 }
 
 .medium-font {
@@ -131,20 +169,15 @@ header nav ul li a:hover {
 
 /*end of buildboard section*/
 
+
 /*start of the portfolio section*/
 
 .portfolio-header {
     width: 100%;
     text-align: center;
-    background-color: #C31508;
-    color: #Eeeeee;
     padding: 15px;
     margin-top: 30px;
     background-image: url("/assets/images/blue-main.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 60%;
-    opacity: .9;
 }
 
 .wrapper {
@@ -156,9 +189,6 @@ header nav ul li a:hover {
     justify-content: space-around;
     width: 100%; 
     background-image: url("/assets/images/blue-main.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 60%;
 }
 
 .image {
@@ -175,24 +205,18 @@ header nav ul li a:hover {
     padding: 30px 0 5px;
     margin: 0 auto 20px auto;
     text-align: center;
-    color: white;
     border-bottom: 2px solid #EEA116;
 }
 
 /*end of portfolio section*/
+
 
 /*start of contact me section*/
 
 .contact-header {
     width: 100%;
     text-align: center;
-    background-color: #C31508;
-    color: #Eeeeee;
     background-image: url("/assets/images/blue-main.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 60%;
-    opacity: .9;
     padding: 15px; 
 }
 
@@ -203,33 +227,27 @@ header nav ul li a:hover {
     align-content: space-around;
     padding: 50px;
     background-image: url("/assets/images/blue-main.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 60%;
 }
 
-.buttons .push-me {
+.push-me {
     width: 100px;
     height: 50px;
     border-radius: 20px;
     font-size: 20px;
     margin: 10px 20px 10px 20px;
+    background-color: #6398EA;
+    border: none;
 }
 
 /*end of contact me section*/
+
 
 /*start of footer section*/
 
 .footer {
     width: 100%;
     text-align: center;
-    background-color: #C31508;
-    color: #Eeeeee;
     background-image: url("/assets/images/blue-main.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 60%;
-    opacity: .9;
     padding: 15px;
 }
 
