@@ -12,11 +12,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     padding: 30px;
-    background-image: url("/assets/images/backgorund.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 54%;
-    opacity: .9;
+    background-color: #C31508;
 }
 
 header h1 {
@@ -55,6 +51,34 @@ header nav ul li a:hover {
 
 /*end of header section*/
 
+/*start of about me section*/
+
+.about-title {
+    width: 100%;
+    text-align: center;
+    background-color: #C31508;
+    color: #Eeeeee;
+    padding: 15px;
+    background-image: url("/assets/images/backgorund.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 60%;
+    opacity: .9;
+}
+
+.description {
+    padding: 20px
+}
+
+.description p {
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*end of about me section*/
+
 /*Billboard section*/
 
 .billboard {
@@ -65,7 +89,7 @@ header nav ul li a:hover {
     background-image: url("/assets/images/backgorund.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: 54%;
+    background-position: 60%;
 }
 
 .billboard .intro{
@@ -101,7 +125,7 @@ header nav ul li a:hover {
 
 .picture img{
     width: 60vw;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     padding-top: 20px;
 }
 
@@ -116,6 +140,11 @@ header nav ul li a:hover {
     color: #Eeeeee;
     padding: 15px;
     margin-top: 30px;
+    background-image: url("/assets/images/blue-main.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 60%;
+    opacity: .9;
 }
 
 .wrapper {
@@ -126,6 +155,10 @@ header nav ul li a:hover {
     justify-content: center;
     justify-content: space-around;
     width: 100%; 
+    background-image: url("/assets/images/blue-main.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 60%;
 }
 
 .image {
@@ -133,6 +166,7 @@ header nav ul li a:hover {
     max-width: 85vw;
     flex: 1;
     border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 .project-title {
@@ -141,6 +175,7 @@ header nav ul li a:hover {
     padding: 30px 0 5px;
     margin: 0 auto 20px auto;
     text-align: center;
+    color: white;
     border-bottom: 2px solid #EEA116;
 }
 
@@ -153,15 +188,24 @@ header nav ul li a:hover {
     text-align: center;
     background-color: #C31508;
     color: #Eeeeee;
-    padding: 15px;
-    margin-top:30px;
+    background-image: url("/assets/images/blue-main.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 60%;
+    opacity: .9;
+    padding: 15px; 
 }
 
 .buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: space-around;
     padding: 50px;
+    background-image: url("/assets/images/blue-main.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 60%;
 }
 
 .buttons .push-me {
@@ -169,7 +213,7 @@ header nav ul li a:hover {
     height: 50px;
     border-radius: 20px;
     font-size: 20px;
-    margin: 0 20px 0 20px;
+    margin: 10px 20px 10px 20px;
 }
 
 /*end of contact me section*/
@@ -181,6 +225,11 @@ header nav ul li a:hover {
     text-align: center;
     background-color: #C31508;
     color: #Eeeeee;
+    background-image: url("/assets/images/blue-main.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 60%;
+    opacity: .9;
     padding: 15px;
 }
 
