@@ -370,3 +370,38 @@ header nav ul li a:hover {
 }
 
 /*end of media queries for smaller desktop screens*/
+
+
+/*start of media queries for large desktop screens*/
+
+@media screen and (min-width: 1200px) {
+
+    header {
+        position: sticky;
+    }
+
+    header h1 {
+        font-size: 35px;
+        flex: 1;
+        margin-right: 55%;
+    }
+
+    header nav ul li a {
+        font-size: 2vw;
+    }
+
+    .picture img{
+        width: 20vw;
+    }
+
+    .description {
+        margin: 2% 40%;
+    }
+    
+    .description p {
+        padding-top: 0px;
+        font-size: 20px;
+    }
+}
+
+/*end of media queries for large desktop screens*/
