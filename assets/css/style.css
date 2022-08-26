@@ -17,16 +17,17 @@
 
 /*common color attributes*/
 
-.about-title:hover, .portfolio-header:hover,
-.project-title:hover, .contact-header:hover,
-.push-me:hover,
-.footer:hover{
+.header h1:hover, .about-title:hover,
+.portfolio-header:hover, .project-title:hover, 
+.contact-header:hover, .push-me:hover, 
+.footer:hover,
+.push-me a:hover{
     color: var(--glow);
 }
 
 .about-title, .portfolio-header,
 .contact-header, .project-title,
-.push-me,
+.push-me, .push-me a,
 .footer {
     color: var(--light-white);
 }
@@ -73,10 +74,6 @@ header h1 {
     width: 100%;
 }
 
-header h1:hover {
-    color: var(--glow);
-}
-
 header nav {
     padding: 15px;
 }
@@ -93,7 +90,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px;
     margin: 5px;
-    font-size: 4vw;
+    font-size: 3.8vw;
     color:  var(--light-white);
     text-decoration: none;
 }
@@ -123,7 +120,7 @@ header nav ul li a:hover {
 }
 
 .billboard p {
-    color: white;
+    color: var(--glow);
 }
 
 .small-font {
@@ -259,6 +256,10 @@ header nav ul li a:hover {
     margin: 10px 20px 10px 20px;
     background-color: #506DF5;
     border: none;
+}
+
+.push-me a {
+    text-decoration: none;
 }
 
 .push-me:hover {
